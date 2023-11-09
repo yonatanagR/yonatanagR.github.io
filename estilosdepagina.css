@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 24px;
+}
+
+body{
+    background: #ffffff;
+    font-size: 24px;
+}
+
+body.dark{
+    background-color: #16181c;
+}
+
+#Encabezado{
+    width: 99.2%;
+    height: 2.5em;
+    position: fixed;
+    margin-left: 0.3%;
+    margin-right: 0.5%;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.dark #Encabezado{
+    background: #16181c;
+}
+
+.LadoIzquierdo{
+    display: inline;
+    float: left;
+}
+
+.LadoDerecho{
+    display: inline;
+    float: right;
+}
+
+#Logo{
+    width: 2.0833em;
+    height: 2.0833em;
+    margin: 0.2083333333333rem 0rem;
+    border-radius: 50%;
+}
+
+.Menu{
+    position: absolute;
+    display: inline;
+    margin: 0.75em 2.1157em;
+    font-family: 'Joan', serif;
+    color: rgb(15, 20, 25);
+    font-size: 1em;
+}
+
+.dark .Menu{
+    color: white;
+    text-shadow: none;
+}
+
+nav li {
+    display: inline;
+    list-style: none;
+    margin: 0.625em 0em;
+    cursor: pointer;
+}
+
+
+.switch {
+    margin: 0.625rem 0rem;
+    float: right;
+    position: relative;
+    background: #ACABAB;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 4.1667rem;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px rgba(133, 125, 125, 0.2);
+}
+
+.switch span {
+    width: 1.25rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    background: none;
+    color: black;
+}
+
+.switch.active {
+    background: orange;
+}
+
+.switch.active::after {
+    right: 0;
+    left: unset;
+    background: white;
+}
+
+#SeccionPrincipal{
+    position: absolute;
+    width: 72.5%;
+    height: auto;
+    margin-top: 2.5em;
+    margin-left: 0.3%;
+    z-index: 0;
+}
+
+.Secciones{
+    position: absolute;
+    width: 26.125%;
+    height: auto;
+}
+
+.SeccionUno{
+    margin-left: 10.3%;
+    margin-right: 0.5%;
+    /*margin-left: 100.758px;
+    margin-right: 4.9992px;
+     border: solid 1px rgb(105, 105, 105); */
+}
+
+.SeccionDos{
+    margin-left: 37%;
+    /*margin-left: 361.2576px;
+    border: solid 1px rgb(105, 105, 105); */
+}
+
+.SeccionTres{
+    margin-left: 63.57%;
+    margin-right: 10.3%;
+    /*margin-left: 621.7584px;
+    margin-right: 100.0008px;
+    border: solid 1px rgb(105, 105, 105); */
+}
+
+#Artistas{
+    position: fixed;
+    width: 26.7%;
+    height: 86.3%;
+    /* border: solid 1px rgb(105, 105, 105); */
+    margin-top: 2.5em;
+    margin-left: 72.8%;
+    margin-right: 0.5%;
+    background: #ffffff;
+    box-shadow: inset 5px 5px 10px #cdcdcd, inset -5px -5px 5px #efefef;
+    cursor: pointer;
+}
+
+.PerfilDelArtista{
+    width: 26.7%;
+    height: 4.7045em;
+    position: fixed;
+}
+
+.Yue{
+    margin-top: 4.7045em;
+}
+
+.FotoDePerfil{
+    height: 3.3333em;
+    width: 3.3333em;
+    border-radius: 50%;
+    margin: 0.6442em 0em 0.6442em 0.6442em;
+}
+
+.NombreDelArtista{
+    margin: 1.2271rem 0rem 1.2271rem 0.5606rem;
+    position: absolute;
+    display: inline;
+    font-size: 0.9167em;
+}
+
+.Redes{
+    display: inline;
+    width: 32.3%;
+    height: 81.15%;
+    margin:  0.4356rem 0rem 0.5189rem 6.1023rem;
+    padding-left: 3.737rem;
+    position: absolute;
+}
+
+.Redes a i{
+    width: 1.0417rem;
+    margin:  0rem 0rem 0.0833rem 0rem;
+    font-size: 0.75rem;
+    display: block;
+    color: black;
+}
+
+.dark .NombreDelArtista{
+    color: white;
+}
+
+.dark .Redes a i {
+    color: white;
+}
+
+.ocultar{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.dark #Artistas{
+    margin-top: 2.5em;
+    background: #16181c;
+    box-shadow: inset 5px 5px 10px #000000, inset -5px -5px 5px #161718;
+}
+
+@media (max-width: 1349px){
+    
+}
+
+
+
+@media (max-width: 1200px){
+    html{
+        font-size: 18px;
+    }
+    body{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 700px){
+    html{
+        font-size: 16px;
+    }
+    body{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 428px){
+    html{
+        font-size: 13px;
+    }
+    body{
+        font-size: 13px;
+    }
+}
